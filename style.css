@@ -1,0 +1,70 @@
+@import url("//fonts.googleapis.com/css?family=Work+Sans:400, 700");
+
+:root {
+  --background: #fff9f9;
+  --primary-color: #ff0000;
+}
+
+body {
+  font-family: Work Sans, sans-serif;
+
+  background-color: var(--background);
+  color: var(--primary-color);
+  max-width: 960px;
+  margin: 64px auto 64px auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 48px 0;
+}
+
+span {
+  margin: 0 8px;
+}
+
+circle {
+  fill: var(--primary-color);
+  stroke: var(--background);
+  stroke-width: 3px;
+}
+
+line {
+  stroke-width: 1px;
+  stroke-dasharray: 3 8;
+}
+
+path.domain {
+  stroke-width: 2px;
+}
+
+text.x-text,
+text.y-text {
+  fill: var(--primary-color);
+  font-size: 24px;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+g.city rect {
+  fill: var(--primary-color);
+  opacity: 0;
+}
+
+g.city text {
+  fill: var(--background);
+  text-anchor: middle;
+  font-size: 14px;
+  opacity: 0;
+}
+
+g.city:hover rect,
+g.city:hover text {
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  body {
+    margin: 20px;
+  }
+}
